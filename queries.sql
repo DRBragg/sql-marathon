@@ -13,3 +13,5 @@ SELECT * FROM movies LIMIT 5;
 SELECT * FROM movies ORDER BY year DESC LIMIT 5;
 
 UPDATE catagories SET name = 'Science Fiction' WHERE name = 'Sci-Fi';
+
+DELETE FROM movies WHERE id = 3;
