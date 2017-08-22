@@ -1,7 +1,7 @@
 DROP TABLE movies CASCADE;
-DROP TABLE catagories CASCADE;
+DROP TABLE categories CASCADE;
 
-CREATE TABLE catagories(
+CREATE TABLE categories(
   id SERIAL PRIMARY KEY,
   name VARCHAR(255) NOT NULL UNIQUE
 );
@@ -10,6 +10,6 @@ CREATE TABLE movies(
   id SERIAL PRIMARY KEY,
   title VARCHAR(255) NOT NULL,
   year INT,
-  catagory_id INT REFERENCES catagories (id),
+  category_id INT REFERENCES categories (id),
   UNIQUE (title, year)
 );
