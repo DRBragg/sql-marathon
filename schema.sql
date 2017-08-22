@@ -1,4 +1,5 @@
 DROP TABLE movies CASCADE;
+DROP TABLE catagories CASCADE;
 
 CREATE TABLE movies(
   id SERIAL PRIMARY KEY,
