@@ -11,3 +11,5 @@ SELECT title, year  FROM movies GROUP BY title, year ORDER BY title ASC;
 SELECT * FROM movies LIMIT 5;
 
 SELECT * FROM movies ORDER BY year DESC LIMIT 5;
+
+UPDATE catagories SET name = 'Science Fiction' WHERE name = 'Sci-Fi';
