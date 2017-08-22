@@ -6,7 +6,7 @@ SELECT * FROM movies WHERE id = 4;
 
 SELECT title FROM movies ORDER BY year ASC;
 
-SELECT title, year  FROM movies GROUP BY title, year ORDER BY title ASC;
+SELECT year, title  FROM movies ORDER BY year, title;
 
 SELECT * FROM movies LIMIT 5;
 
